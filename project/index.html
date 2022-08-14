@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+	<style>
+		@import 'undo.css';
+		@import 'style.css';
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	</style>
+</head>
+<body>
+	<script>
+  AOS.init();
+</script>
+
+
+	<header>
+	<nav>
+			<a href="index.html" class="active">Главная</a>
+			<a href="I.html" >Автор</a>
+             <a href="gallery.html">Галерея</a>
+             <a href="cinema.html">Кино</a>
+              <a href="gulash.html">Маинкрафт</a>
+		
+	</nav>
+	<div class="header_img_container" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+     	<a href="index.html"><img src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGZpbGw9IiNlY2YwZjEiPjxwYXRoIGQ9Ik03My4zNzYxLDI4Ljk0ODM2Yy02LjA0MzQzLC0wLjA4NDczIC0xMi41NzE0MSwwLjExMDIzIC0xOS42MjYxLDAuNjE0MTRjMCwwIC05Ljc1MzUzLDExLjY4OTE1IC0xMi42MjkxNSwzMy40MzEwM2wwLjA1MjQ5LC0wLjA1MjQ5YzE3LjQxNSwtMTQuMzI0MzcgMzQuOTM0NzcsLTE2LjQyMTA0IDQxLjU0NjAyLC0xNy4yMjcyOWwwLjY0NTYzLDUuMzIyNTFjLTAuNTkxMjUsMC4xMDc1IC0yNS4xNTM3NCwyLjYwNzkzIC00My4wNTI0OSwyMy4yNDc5M3YwLjQzMDQyYy0yMS41LC04LjA2MjUgLTM3LjYyNSwtNy41MjcxIC0zNy42MjUsLTcuNTI3MWMwLDAgLTIuNjg3NSwyNC4xODc1IDEwLjc1LDQ4LjM3NWMwLDAgMTAuNzUsLTIuNjg3NSAyNi44NzUsLTEwLjc1YzAsMCAyLjY4NzUsMTYuMTI1IDguMDYyNSwzMi4yNWMwLDAgMTkuOTQwODMsMi45MDM5NyA0OS4yODgzMywtMS4xODEwM2MtMy4zMjQ0NCwtMTMuNzczNDQgLTIuNzkyNDgsLTI0LjgzMzEzIC0yLjc5MjQ4LC0yNy41MjA2M2wyMC40NzY0NCwxLjcyMTY4bC0wLjQ2MTkxLDUuNDc5OThoLTEyLjc2MDM4YzAsMCAwLjAwMjcxLDguODUwNTYgMy40Njk2MSwxOC43NDQyNmMwLjAyNDk1LDAuMTAyNTggMC4wNTQwMiwwLjIzNTc3IDAuMDc4NzMsMC4zMzU5NGMwLjAxMzg5LC0wLjAwMjQyIDAuMDI4MSwtMC4wMDgwNyAwLjA0MTk5LC0wLjAxMDVjMS41ODQ3OCw0LjQzNTEgMy44NjIyOSw5LjA1ODU4IDcuMTU5NjcsMTMuMTgwM2MwLDAgMTIuMjg4NTUsLTguMTk3NiAyNC4zNTAyMiwtMjEuMDA2NTljOS4xNjI4MiwtMi45NTgxMyAxOC42NTE0NSwtNi42MTk2NSAyOC4zMjM3MywtMTEuMjQzNDFjMCwwIDguMDYyNSwtNS4zNzUgNS4zNzUsLTEzLjQzNzVjLTEyLjM2MjUsLTguMDYyNSAtMTIuMzYxNDUsLTE4LjgxMjUgLTE1LjA0ODk1LC0yNC4xODc1Yy0xMC43MTY0MSwtMjEuNDU3MTcgLTI0LjA3OTA4LC00OC4xNzAxMSAtODIuNDk4OSwtNDguOTg5MTR6TTEzNC4zNzUsNzUuMjVjMi45Njk2OSwwIDUuMzc1LDIuNDA1MzEgNS4zNzUsNS4zNzVjMCwyLjk2OTY5IC0yLjQwNTMxLDUuMzc1IC01LjM3NSw1LjM3NWMtMi45Njk2OSwwIC01LjM3NSwtMi40MDUzMSAtNS4zNzUsLTUuMzc1YzAsLTIuOTY5NjkgMi40MDUzMSwtNS4zNzUgNS4zNzUsLTUuMzc1eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"></a>
+		
+	</div>
+	</header>
+	<main>
+		<section class="hero" >
+			<div class="hero-left" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+				<h1>На данном сайте вы увидете много разных карасей </h1>
+
+			</div>
+			<div class="hero-right" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+				<img src="https://static5.depositphotos.com/1039682/535/i/600/depositphotos_5353129-stock-photo-crucian-carp-isolated-on-white.jpg" alt="">
+			</div>
+		</section>
+		<section class="quote">
+			<h2>Караси живут на нашей планете не один миллион лет и мало кто знает что спинозавр их близкий родстеник</h2>
+		</section>
+		<section class="video" >
+			<video src="fugu.mp4" type="video/mp4" autoplay muted loop-loop></video>
+		</section>
+		<div class="description" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+			<h2>Теория</h2>
+			<h3>Караси</h3>
+			<p>Караси — неприхотливые промысловые рыбы, и ценный объект прудового хозяйства благодаря способности выживать при низком (до 2-3 мг/л) содержании кислорода в воде. Спинной плавник длинный, глоточные зубы однорядные. Тело высокое с толстой спиной, умеренно сжатое с боков. Чешуя крупная и гладкая на ощупь. Окраска варьирует в зависимости от места обитания.</p>
+		</div>
+		<div class="feature" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+			<div class="feature__image">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmqAsHTwvnv1yGVjiTgyQQaJI9I1OgbsqeVg&usqp=CAU" alt="">
+			</div>
+			<div class="feature__text">
+				<h4 class="">Статистика</h4>
+				<p class="statistics">смертей - <span class="value">666м</span></p>
+				<h4 class="">Только в этом году 666м карасей попали на стол в конун нового года</h4>
+				<p class="p-description">Даный карасик праздновал новый год и его съели вместе с салатом. Остановите эти жертвы.:(</p>
+			</div>
+		</div>
+		<div class="feature" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+			<div class="feature__image" >
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBDJLNqqQF6sWJUsdL_h7DiYA_n0FA7oRxg&usqp=CAU" alt="">
+			</div>
+			<div class="feature__text">
+				<h4 class="">Статистика</h4>
+				<p class="statistics">В плену - <span class="value">400м</span></p>
+				<h4>Каждый пятый карась попал в плен на уголбной шахте</h4>
+				<p></p>
+			</div>
+		</div>
+		<div class="feature" data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
+			<div class="feature__image">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGozWkT5_EvDoCp2RIh4jD-NLdtG4rxiWRX0WZy_QTXLpJJ_xBalhdkJSruSG9meLSj6o&usqp=CAU" alt="">
+			</div>
+			<div class="feature__text">
+				<h4 class="">Статистика</h4>
+				<p class="statistics">Каждый 5 - <span class="value">400м</span></p>
+				<h4>Многие караси были нелегально вывезены из своих родных зон обитанияы</h4>
+				<p></p>
+			</div>
+		</div>
+		<form 
+		action="https://formspree.io/f/mwkzklpp"
+  method="POST" class="form" 
+  >
+			<input type="email" name="email" placeholder="введите вашу почту">
+			<textarea rows="3" placeholder="ведите сообщение по обратной связи" name="message"></textarea>
+			<button type="submit">Отправить</button>
+		</form>
+		<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="https://aquarium-fish-home.ru/wp-content/uploads/2020/10/1567530097_karas.jpg" alt="" class="nobord"></div>
+    <div class="swiper-slide"> <img src="https://moreprodukt.info/wp-content/uploads/2021/08/karas-v-rukah.jpg" alt="" class="nobord"></div>
+    <div class="swiper-slide">  <img src="https://www.fishing-v.ru/images/img/statyi/Altayskie_Karasi.jpg" alt="" class="nobord"></div>
+ 
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  
+  
+	</div>
+	</main>
+	<div id="scrollTop">
+		<img src="https://cdn-icons-png.flaticon.com/512/25/25366.png" alt="">
+	</div>
+	<footer>
+		<div class="footer-container">
+			<h3>Сылки на социальные сети</h3>
+			<div class="icons-container">
+				<img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/vk-circled.png" alt="">
+			</div>
+			<p> Copyright &copy; 2022 Kirill Still</p>
+		</div>
+	</footer>
+	
+
+	<script>
+		document.querySelector('#scrollTop').addEventListener('click',()=> {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth"
+			});
+		})
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.none',
+  },
+  autoplay: {
+  	delay: 3000
+  }
+});</script>
+
+</body>
+</html>
