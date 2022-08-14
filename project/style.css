@@ -293,3 +293,11 @@ footer {
 	height: 48px;
 	object-fit: cover;
 }
+.swiper-button-prev, .swiper-button-next {
+	position: absolute;
+	top: 50% !important;
+	background-color: var(--main-color) !important;
+}
+.nobord {
+	border-radius: 0;
+}
